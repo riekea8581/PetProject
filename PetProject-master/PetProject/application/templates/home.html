@@ -1,0 +1,148 @@
+
+<!--
+Since the only diffence between this and about is in the <body>
+</body>, we just use the HTML layout.html file with the body blocked out.
+
+
+-->
+{% extends "layout.html" %}
+
+{%block content%}
+      <header class="masthead">
+        <div class="container-fluid h-100">
+          <div class="row h-100 align-items-center">
+            <div class="col-12 text-center">
+              <h1 class="font-weight-light pb-5 mb-5">Every Pet Deserves A Second Chance</h1>
+            </div>
+          </div>
+        </div>
+        </header>
+
+        <div class="jumbotron mb-0" id="section1">
+          <div class="row p-5">
+            <div class="col-lg-4">
+              <img src="../static/images/bird.png" class="img-fluid" alt="test" width="300">
+            </div>
+            <div class="col-lg-8 border border-dark">
+              <h2 class="display-3">Why Us?</h2>
+              <h2 class="pt-5">We Love Pets Just As Much As You Do!</h2>
+              <p>We're the pet company that can help you solve all your problems. Looking for some
+				new furry family? Need a home for a pet you can no longer care for? Regardless of
+				the problem, we will be here to help you, step by step.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="jumbotron bg-white mb-0" id="section2">
+          <div class="container p-5 section2">
+            <div class="row justify-content-center align-self-center p-3">
+              <div class="col-lg-6 text-center">
+                <h2 class="display-4">Browse By Pet</h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-2 col-md-4">
+                <div class="thumbnail text-center">
+                  <a href="/adopt/Dog">
+                    <img src="../static/images/dog.jpg" class="rounded-circle" alt="Dog" width="150">
+                    <div class="caption">
+                      <button class="btn btn-warning storeColor border border-white mt-2" type="button" name="button">Shop Dog</button>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4">
+                <div class="thumbnail text-center">
+                  <a href="/adopt/Cat">
+                    <img src="../static/images/cat.jpg" class="rounded-circle" alt="Cat" width="150">
+                    <div class="caption">
+                      <button class="btn btn-warning storeColor border border-white mt-2" type="button" name="button">Shop Cat</button>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4">
+                <div class="thumbnail text-center">
+                  <a href="/adopt/Fish">
+                    <img src="../static/images/fish.jpg" class="rounded-circle" alt="Cat" width="150">
+                    <div class="caption">
+                      <button class="btn btn-warning storeColor border border-white mt-2" type="button" name="button">Shop Fish</button>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4">
+                <div class="thumbnail text-center">
+                  <a href="/adopt/Reptile">
+                    <img src="../static/images/reptile.jpg" class="rounded-circle" alt="Cat" width="150">
+                    <div class="caption">
+                      <button class="btn btn-warning storeColor border border-white mt-2" type="button" name="button">Shop Reptile</button>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4">
+                <div class="thumbnail text-center">
+                  <a href="/adopt/Bird">
+                    <img src="../static/images/bird2.jpg" class="rounded-circle" alt="Cat" width="150">
+                    <div class="caption">
+                      <button class="btn btn-warning storeColor border border-white mt-2" type="button" name="button">Shop Bird</button>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4">
+                <div class="thumbnail text-center">
+                  <a href="/adopt/Small-Animal">
+                    <img src="../static/images/small.jpg" class="rounded-circle" alt="Cat" width="150">
+                    <div class="caption">
+                      <button class="btn btn-warning storeColor border border-white mt-2" type="button" name="button">Shop Small Animals</button>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-center align-self-center p-5">
+              <div class="col-lg-6 text-center">
+                 <h2>We Are The Epitome of Customer and Pet Service</h2>
+                  <p>Keep an eye out, because we have some new features coming in the future. Short-term pet-sitting for while you're at work, as long as longer kennel stays for while you're on a trip will be available soon. Also keep an eye out for pet training programs, and have the opportunity to let your pet come and play with other animals at our playground.</p>
+              </div>
+              <div class="col-lg-6 p-5 text-center border border-warning">
+                <h2>How can we care for your pet?</h2>
+                <div class="row align-items-center">
+                  <div class="col-lg-6 text-center">
+                    <img src="../static/images/grooming.png" class="img-fluid" alt="Grooming">
+                    <p class="image-text">Pet Sitting</p>
+                  </div>
+                  <div class="col-lg-6 text-center">
+                    <img src="../static/images/pet1.png" class="img-fluid" alt="Grooming">
+                    <p class="image-text">Pet Training</p>
+                  </div>
+                  <div class="col-lg-6">
+                    <img src="../static/images/pet2.png" class="img-fluid" alt="Grooming">
+                    <p class="image-text">Pet Kennel</p>
+                  </div>
+                  <div class="col-lg-6">
+                    <img src="../static/images/pet3.png" class="img-fluid" alt="Grooming">
+                    <p class="image-text">Playground</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="jumbotron mb-0">
+          <div class="row justify-content-center align-self-center m-0">
+            <div class="col-lg-9 text-center">
+              <h2 class="display-4">Ready To Pay Our Furry Friends A Visit?</h2>
+              <h3>Schedule An Appointment Today!</h3>
+                <a href="/meetingAdd" class="btn btn-primary btn-lg">Schedule An Appointment</a>
+            </div>
+          </div>
+        </div>
+
+
+    </div>
+{% endblock %}
